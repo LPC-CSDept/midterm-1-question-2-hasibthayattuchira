@@ -6,6 +6,10 @@ def main():
     """
     i = 0
     longest = shortest = ''
+    while True:
+        word = input('Enter a word: ')
+        if word.lower() == 'stop':
+            break
 
     ########################################
     # Do not delete the return statement
