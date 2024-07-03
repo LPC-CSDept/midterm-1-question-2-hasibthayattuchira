@@ -6,6 +6,16 @@ def main():
     """
     i = 0
     longest = shortest = ''
+    while True:
+        word = input('Enter a word: ')
+        if word.lower() == 'stop':
+            break
+        if len(word) > len(longest):
+            longest = word
+        elif len(word) < len(shortest) or shortest == '':
+            shortest = word
+            
+    print(longest, shortest)
 
     ########################################
     # Do not delete the return statement
