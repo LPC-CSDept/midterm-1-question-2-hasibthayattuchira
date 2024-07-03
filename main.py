@@ -10,6 +10,10 @@ def main():
         word = input('Enter a word: ')
         if word.lower() == 'stop':
             break
+        if len(word) > len(longest):
+            longest = word
+        elif len(word) < len(shortest) or shortest == '':
+            shortest = word
 
     ########################################
     # Do not delete the return statement
