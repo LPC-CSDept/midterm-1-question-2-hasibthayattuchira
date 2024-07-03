@@ -14,6 +14,8 @@ def main():
             longest = word
         elif len(word) < len(shortest) or shortest == '':
             shortest = word
+            
+    print(longest, shortest)
 
     ########################################
     # Do not delete the return statement
